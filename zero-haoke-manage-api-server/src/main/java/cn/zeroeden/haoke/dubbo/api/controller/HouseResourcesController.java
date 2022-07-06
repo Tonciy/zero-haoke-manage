@@ -1,6 +1,7 @@
 package cn.zeroeden.haoke.dubbo.api.controller;
 
 import cn.zeroeden.haoke.dubbo.api.service.HouseResourcesService;
+import cn.zeroeden.haoke.dubbo.api.vo.TableResult;
 import cn.zeroeden.haoke.dubbo.server.pojo.HouseResources;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -35,13 +36,22 @@ public class HouseResourcesController {
     }
 
     /**
-     * test
+     * 查询房源列表
      *
+     * @param houseResources
+     * @param currentPage
+     * @param pageSize
      * @return
      */
     @GetMapping
     @ResponseBody
-    public ResponseEntity<String> get() {
-        return ResponseEntity.ok("ok");
+    public ResponseEntity<TableResult> list(HouseResources houseResources,
+                                            @RequestParam(name = "currentPage",
+                                                    defaultValue = "1") Integer currentPage,
+                                            @RequestParam(name = "pageSize",
+                                                    defaultValue = "10") Integer pageSize) {
+        return ResponseEntity.ok(this.houseResourcesService.queryList(houseResources, currentPage, pageSize));
     }
+
+
 }
