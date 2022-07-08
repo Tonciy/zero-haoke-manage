@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>zero-haoke-manage-dubbo-server-house-resources</module>
+        <module>zero-haoke-manage-dubbo-server-common</module>
+        <module>zero-haoke-manage-dubbo-server-ad</module>
     </modules>
 
     <dependencies>

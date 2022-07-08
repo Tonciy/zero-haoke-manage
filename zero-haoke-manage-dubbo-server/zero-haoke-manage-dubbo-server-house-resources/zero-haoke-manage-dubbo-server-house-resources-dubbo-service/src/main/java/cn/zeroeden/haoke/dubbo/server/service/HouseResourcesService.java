@@ -18,4 +18,6 @@ public interface HouseResourcesService {
      * @return
      */
     HouseResources queryHouseResourcesById(Long id);
+
+    boolean updateHouseResources(HouseResources houseResources);
 }

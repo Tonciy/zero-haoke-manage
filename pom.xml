@@ -7,7 +7,6 @@
     <modules>
         <module>zero-haoke-manage-api-server</module>
         <module>zero-haoke-manage-dubbo-server</module>
-        <module>zero-haoke-manage-dubbo-server-house-resources</module>
     </modules>
 
     <!--spring boot的支持-->

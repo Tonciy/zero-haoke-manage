@@ -8,6 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-service" />
+        <module name="zero-haoke-manage-dubbo-server-ad-service" />
+        <module name="zero-haoke-manage-dubbo-server-ad-interface" />
+        <module name="zero-haoke-manage-dubbo-server-common" />
         <module name="zero-haoke-manage-api-server" />
         <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-interface" />
       </profile>
@@ -18,6 +21,10 @@
       <module name="zero-haoke-manage" options="-parameters" />
       <module name="zero-haoke-manage-api-server" options="-parameters" />
       <module name="zero-haoke-manage-dubbo-server" options="-parameters" />
+      <module name="zero-haoke-manage-dubbo-server-ad" options="-parameters" />
+      <module name="zero-haoke-manage-dubbo-server-ad-interface" options="-parameters" />
+      <module name="zero-haoke-manage-dubbo-server-ad-service" options="-parameters" />
+      <module name="zero-haoke-manage-dubbo-server-common" options="-parameters" />
       <module name="zero-haoke-manage-dubbo-server-house-resources" options="-parameters" />
       <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-interface" options="-parameters" />
       <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-service" options="-parameters" />

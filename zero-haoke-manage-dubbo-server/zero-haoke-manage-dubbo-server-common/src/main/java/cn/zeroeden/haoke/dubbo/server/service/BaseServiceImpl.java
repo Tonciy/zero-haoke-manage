@@ -1,4 +1,4 @@
-package cn.zeroeden.haoke.dubbo.server.service.impl;
+package cn.zeroeden.haoke.dubbo.server.service;
 
 import cn.zeroeden.haoke.dubbo.server.pojo.BasePojo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

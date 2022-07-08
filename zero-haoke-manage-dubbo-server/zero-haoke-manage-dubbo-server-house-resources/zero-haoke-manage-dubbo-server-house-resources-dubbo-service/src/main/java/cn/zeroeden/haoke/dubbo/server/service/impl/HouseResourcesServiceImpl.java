@@ -1,6 +1,7 @@
 package cn.zeroeden.haoke.dubbo.server.service.impl;
 
 import cn.zeroeden.haoke.dubbo.server.pojo.HouseResources;
+import cn.zeroeden.haoke.dubbo.server.service.BaseServiceImpl;
 import cn.zeroeden.haoke.dubbo.server.service.HouseResourcesService;
 import cn.zeroeden.haoke.dubbo.server.vo.PageInfo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -29,11 +30,16 @@ public class HouseResourcesServiceImpl extends BaseServiceImpl<HouseResources> i
         queryWrapper.orderByDesc("updated");
         IPage iPage = super.queryPageList(queryWrapper, page, pageSize);
         return new PageInfo<HouseResources>
-                (Long.valueOf(iPage.getTotal()).intValue() , page, pageSize, iPage.getRecords());
+                (Long.valueOf(iPage.getTotal()).intValue(), page, pageSize, iPage.getRecords());
     }
 
     @Override
     public HouseResources queryHouseResourcesById(Long id) {
         return super.queryById(id);
+    }
+
+    @Override
+    public boolean updateHouseResources(HouseResources houseResources) {
+        return super.update(houseResources) == 1;
     }
 }
