@@ -21,8 +21,11 @@ public class MockController {
      * @return
      */
     @GetMapping("index/menu")
+    @CrossOrigin
     public String indexMenu() {
-        return this.mockConfig.getIndexMenu();
+        String indexMenu = this.mockConfig.getIndexMenu();
+        System.out.println(indexMenu);
+        return indexMenu;
     }
 
     /**
@@ -32,7 +35,9 @@ public class MockController {
      */
     @GetMapping("index/info")
     public String indexInfo() {
-        return this.mockConfig.getIndexInfo();
+        String indexInfo = this.mockConfig.getIndexInfo();
+//        System.out.println(indexInfo);
+        return indexInfo;
     }
 
     /**

@@ -21,6 +21,7 @@ import java.util.Map;
 @RequestMapping("graphql")
 @CrossOrigin
 public class GraphQLController {
+
     @Autowired
     private GraphQL graphQL;
     private static final ObjectMapper MAPPER = new ObjectMapper();
