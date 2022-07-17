@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-service" />
-        <module name="zero-haoke-manage-api-server" />
+        <module name="zero-haoke-manage-dubbo-server-ad-service" />
         <module name="zero-haoke-manage-dubbo-server-ad-interface" />
         <module name="zero-haoke-manage-dubbo-server-common" />
+        <module name="zero-haoke-manage-api-server" />
         <module name="zero-haoke-manage-dubbo-server-house-resources-dubbo-interface" />
-        <module name="zero-haoke-manage-dubbo-server-ad-service" />
       </profile>
     </annotationProcessing>
   </component>
